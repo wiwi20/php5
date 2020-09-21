@@ -1,11 +1,39 @@
 <?php
 
-namespace App;
+// @formatter:off
+/**
+ * A helper file for your Eloquent Models
+ * Copy the phpDocs from this file to the correct Model,
+ * And remove them from this file, to prevent double declarations.
+ *
+ * @author Barry vd. Heuvel <barryvdh@gmail.com>
+ */
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
+namespace App{
+/**
+ * App\NewsItem
+ *
+ * @property int $id
+ * @property string $title
+ * @property string $image
+ * @property string $description
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem query()
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|NewsItem whereUpdatedAt($value)
+ */
+	class NewsItem extends \Eloquent {}
+}
+
+namespace App{
 /**
  * App\User
  *
@@ -30,36 +58,7 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
- * @mixin \Eloquent
  */
-class User extends Authenticatable
-{
-    use Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+	class User extends \Eloquent {}
 }
+
