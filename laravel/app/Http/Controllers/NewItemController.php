@@ -19,21 +19,44 @@ class NewItemController extends Controller
             'newItems' => $newsItems
         ]);
     }
-/**
- * Display a listing of the resourse
- *
- * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Request|\Illuminate\View\View
- *
- */
-public function create(){
-    return view('news-items/create');
-}
+    /**
+     * Display a listing of the resourse
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Request|\Illuminate\View\View
+     *
+     */
+    public function create(){
+        //dit is het create pagina
+        return view('news-items/create');
+    }
+    /**
+     * store a newly created resource in starage
+     *
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Request|\Illuminate\View\View
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
+        $newsItem = new NewsItem();
+        $newsItem->title = $request->get('title');
+        $newsItem->description = $request->get('description');
+        $newsItem->image = $request->get('image');
+
+        $newsItem->save();
+        return redirect('news')->with('succes', 'bericht is opgeslagen');
+    }
     /**
      * Display a listing of the resourse
      *
      * @param int $id
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Http\Request|\Illuminate\View\View
      */
+    // voor de post
     public function show($id){
         try{
             $newsItem = NewsItem::find($id);
