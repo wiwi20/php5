@@ -12,13 +12,13 @@
                 <strong>{{ $message }}</strong>
             </div>
         @endif
-        <div class="row">
+        <div class="row col-12">
             @foreach($newsItems as $newsItem)
-                <div class="col-sm card border-0">
+                <div class="col-sm card border-0 col-md-4">
                     <h2 class="card-title">{{$newsItem['title']}}</h2>
                     <p class="card-text">{{$newsItem['description']}}</p>
                     <img class="card-img" src="{{$newsItem['image']}}" alt="{{$newsItem['title']}}">
-                    <a class="btn btn-light" href="{{route('news.show', $newsItem['id'])}}">Lees meer</a>
+                    <div><a class="btn btn-light" href="{{route('news.show', $newsItem['id'])}}">Lees meer</a></div>
                 </div>
             @endforeach
         </div>
