@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\NewsItem;
 use Illuminate\Http\Request;
 
@@ -14,10 +15,8 @@ class NewItemController extends Controller
      *
      */
     Public function index(){
-        $newsItems = NewsItem::all();
-        return view('news-items.index',[
-            'newItems' => $newsItems
-        ]);
+        $newsItems = NewsItem::orderBy('created_at', 'desc')->get();
+        return view('news-items.index', compact('newsItems'));
     }
     /**
      * Display a listing of the resourse
@@ -27,7 +26,8 @@ class NewItemController extends Controller
      */
     public function create(){
         //dit is het create pagina
-        return view('news-items/create');
+        $categories = Category::all();
+        return view('news-items.create', compact('categories'));
     }
     /**
      * store a newly created resource in starage
@@ -40,11 +40,14 @@ class NewItemController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'image' =>'required',
+            'category' =>'exists:categories,id',
         ]);
 
         $newsItem = new NewsItem();
         $newsItem->title = $request->get('title');
         $newsItem->description = $request->get('description');
+        $newsItem->category_id = $request->get('category');
         $newsItem->image = $request->get('image');
 
         $newsItem->save();
@@ -58,17 +61,19 @@ class NewItemController extends Controller
      */
     // voor de post
     public function show($id){
-        try{
-            $newsItem = NewsItem::find($id);
-            $error = null;
-        } catch(\Exception $e){
-            $newsItem = null;
-            $error = $e->getMessage();
+
+        $newsItem = NewsItem::find($id);
+        if($newsItem === null){
+            abort(404, "Dit niewsitem is helaas niet gevonden");
         }
 
-        return view('news-items.show', [
-            'newsItem' => $newsItem,
-            'error' =>$error
-        ]);
+        return view('news-items.show', compact('newsItem'));
     }
+    /**
+     *
+     * show the form for editing the specified resource
+     *
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
 }
