@@ -1,12 +1,18 @@
 @extends('layouts.app1')
 
 @section('content')
-    <header class="jumbotron">
-        <h1 class="modal-title float-left">Voeg een nieuwsbericht toe</h1>
-        <a class=""nav-link float-right href="{{route('news')}}">Terug naar nieuwsoverzicht</a>
-    </header>
-
     <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="createheaderclass">
+                    <h1 class="float-left">Voeg een nieuwsbericht toe</h1>
+                    <a class="nav-link float-right" href="{{route('news')}}">Terug naar nieuwsoverzicht</a>
+                </header>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-12 createmain">
         <form method="post" action="{{ route('news.store') }}">
             @csrf
             <div class="form-group">
@@ -40,5 +46,7 @@
             </div>
             <button type="submit" class="btn-primary btn-block">Review Opslaan</button>
         </form>
+    </div>
+    </div>
     </div>
 @endsection
