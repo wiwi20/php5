@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="css toegeveogd">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel2.iml" afterDir="false" />
+    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="inlog/registreer">
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app1.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,6 +173,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hUiztMkHm6TrskqYVyVtDK4Y7A" />
@@ -162,6 +184,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/app" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -200,6 +223,9 @@
       <workItem from="1600336630526" duration="5000" />
       <workItem from="1600677128116" duration="13504000" />
       <workItem from="1601286892431" duration="8275000" />
+      <workItem from="1601389304225" duration="131000" />
+      <workItem from="1601389457743" duration="538000" />
+      <workItem from="1601899885667" duration="4317000" />
     </task>
     <task id="LOCAL-00001" summary="instal laravel">
       <created>1600072427061</created>
@@ -269,6 +295,7 @@
     <MESSAGE value="create pagina aanmaken" />
     <MESSAGE value="categorie aanmaken" />
     <MESSAGE value="css toegeveogd" />
-    <option name="LAST_COMMIT_MESSAGE" value="css toegeveogd" />
+    <MESSAGE value="inlog/registreer" />
+    <option name="LAST_COMMIT_MESSAGE" value="inlog/registreer" />
   </component>
 </project>
