@@ -25,7 +25,20 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <!-- Left Side Of Navbar -->
                                     <ul class="navbar-nav mr-auto">
-
+                                        <div>
+                                            <form action="./search" method="POST" role="search">
+                                                {{ csrf_field() }}
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" name="q"
+                                                           placeholder="Zoeken">
+                                                    <span class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default">
+                                                        <span class="glyphicon glyphicon-search"></span>
+                                                    </button>
+                                                </span>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </ul>
 
                                     <!-- Right Side Of Navbar -->
@@ -66,6 +79,9 @@
                     </div>
                 @endif
                 @yield('content')
+                <div class="footer-copyright text-center py-3">
+                    <p> @CMGT Nieuwsbericht 2020 Wiwi</p>
+                </div>
             </main>
         </div>
     </body>

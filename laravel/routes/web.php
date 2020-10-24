@@ -13,10 +13,7 @@ use App\NewsItem;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+Route::get('/', 'NewItemController@index')->name('news');
 Route::get('/about-us', 'AboutController@show')->name('about');
 Route::get('news', 'NewItemController@index')->name('news');
 Route::get('/news/create', 'NewItemController@create')->name('news.create');
@@ -24,9 +21,4 @@ Route::post('/news/store',  'NewItemController@store')->name('news.store');
 Route::get('/news/{id}', 'NewItemController@show')->name('news.show');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');

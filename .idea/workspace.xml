@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/laravel/public/css/opmaak.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/public/css/opmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/opmaak.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -174,18 +167,18 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\laravel2\laravel\app\Http\Controllers" />
       <recent name="C:\xampp\htdocs\laravel2\laravel\app" />
       <recent name="C:\xampp\htdocs\laravel2\laravel\resources\views\news-items" />
       <recent name="C:\xampp\htdocs\laravel2\laravel\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\laravel2\laravel\resources\views" />
-      <recent name="C:\xampp\htdocs\laravel2\laravel\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -218,7 +211,8 @@
       <workItem from="1601389304225" duration="131000" />
       <workItem from="1601389457743" duration="538000" />
       <workItem from="1601899885667" duration="4459000" />
-      <workItem from="1601904407800" duration="9902000" />
+      <workItem from="1601904407800" duration="9968000" />
+      <workItem from="1603548023298" duration="5791000" />
     </task>
     <task id="LOCAL-00001" summary="instal laravel">
       <created>1600072427061</created>
@@ -269,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601904290777</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update css">
+      <created>1601914447905</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601914447905</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +297,7 @@
     <MESSAGE value="categorie aanmaken" />
     <MESSAGE value="css toegeveogd" />
     <MESSAGE value="inlog/registreer" />
-    <option name="LAST_COMMIT_MESSAGE" value="inlog/registreer" />
+    <MESSAGE value="update css" />
+    <option name="LAST_COMMIT_MESSAGE" value="update css" />
   </component>
 </project>
