@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\NewsItem;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +18,9 @@ Route::get('news', 'NewItemController@index')->name('news');
 Route::get('/news/create', 'NewItemController@create')->name('news.create');
 Route::post('/news/store',  'NewItemController@store')->name('news.store');
 Route::get('/news/{id}', 'NewItemController@show')->name('news.show');
+Route::get('/search', 'NewItemController@search')->name('news.search');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+

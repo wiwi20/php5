@@ -69,11 +69,13 @@ class NewItemController extends Controller
 
         return view('news-items.show', compact('newsItem'));
     }
-    /**
-     *
-     * show the form for editing the specified resource
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
+
+
+    public function search(){
+        $search_text = $_GET['query'];
+        $newsItems = NewsItem::where('title','LIKE','%'.$search_text.'%')->get();
+
+        return view('news-items.search', compact('newsItems'));
+
+    }
 }

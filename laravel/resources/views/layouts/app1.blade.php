@@ -26,20 +26,40 @@
                                     <!-- Left Side Of Navbar -->
                                     <ul class="navbar-nav mr-auto">
                                         <div>
-                                            <form action="./search" method="POST" role="search">
-                                                {{ csrf_field() }}
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" name="q"
-                                                           placeholder="Zoeken">
-                                                    <span class="input-group-btn">
-                                                    <button type="submit" class="btn btn-default">
-                                                        <span class="glyphicon glyphicon-search"></span>
+                                            <form action = "{{url('/search')}}" type = "get" role = "search">
+                                                <div class = "input-group">
+                                                    <input type = "text" class = "form-control" name = "query"
+                                                           placeholder = "zoek"> <span class = "input-group-btn">
+                                                    <button type = "submit" class = "btn btn-default">
+                                                        Search
                                                     </button>
                                                 </span>
                                                 </div>
                                             </form>
                                         </div>
                                     </ul>
+                                    @if(isset($details))
+                                        <p> The Search results for your query <b> {{ $query }} </b> are :</p>
+                                        <h2>Sample User details</h2>
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>titel</th>
+                                                <th>omschrijving</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            @foreach($details as $newsItems)
+                                                <tr>
+                                                    <td>{{$newsItems->title}}</td>
+                                                    <td>{{$newsItems->description}}</td>
+                                                </tr>
+                                            @endforeach
+                                            </tbody>
+                                        </table>
+                                    @elseif(isset($message))
+                                        <p>{{ $message }}</p>
+                                @endif
 
                                     <!-- Right Side Of Navbar -->
                                     <ul class="navbar-nav ml-auto">
