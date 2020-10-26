@@ -39,28 +39,6 @@
                                             </form>
                                         </div>
                                     </ul>
-                                    @if(isset($details))
-                                        <p> The Search results for your query <b> {{ $query }} </b> are :</p>
-                                        <h2>Sample User details</h2>
-                                        <table class="table table-striped">
-                                            <thead>
-                                            <tr>
-                                                <th>titel</th>
-                                                <th>omschrijving</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            @foreach($details as $newsItems)
-                                                <tr>
-                                                    <td>{{$newsItems->title}}</td>
-                                                    <td>{{$newsItems->description}}</td>
-                                                </tr>
-                                            @endforeach
-                                            </tbody>
-                                        </table>
-                                    @elseif(isset($message))
-                                        <p>{{ $message }}</p>
-                                @endif
 
                                     <!-- Right Side Of Navbar -->
                                     <ul class="navbar-nav ml-auto">
@@ -69,7 +47,7 @@
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                             </li>
-                                            @if (Route::has('register'))
+                                            @if ( Route::has('register'))
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                                 </li>
@@ -79,14 +57,21 @@
                                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                                     {{ Auth::user()->name }}
                                                 </a>
-
                                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                                         {{ __('Logout') }}
                                                     </a>
-
+                                                    @if (!Auth::guest() && Auth::user()->hasRole('administrator'))
+                                                        <a class="dropdown-item" href="{{url('/admin')}}">
+                                                            Dashboard
+                                                        </a>
+                                                    @else
+                                                        <a class="dropdown-item" href="{{url('/user')}}">
+                                                            Dashboard
+                                                        </a>
+                                                    @endif
                                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                                         @csrf
                                                     </form>

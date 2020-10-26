@@ -11,6 +11,14 @@
             </div>
         </div>
     </div>
+    @guest
+        <div class="container">
+            <div class="col-12 createmain">
+                <p>Login om nieuwsbericht toe te voegen</p>
+            </div>
+        </div>
+    @endguest
+    @auth
     <div class="container">
         <div class="col-12 createmain">
         <form method="post" action="{{ route('news.store') }}">
@@ -49,4 +57,5 @@
     </div>
     </div>
     </div>
+    @endauth
 @endsection

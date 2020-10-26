@@ -30,6 +30,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/kkszymanowski/traitor" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/league/commonmark" />
@@ -65,6 +66,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/ramsey/collection" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/santigarcor/laratrust" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/scrivo/highlight.php" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/sebastian/comparator" />

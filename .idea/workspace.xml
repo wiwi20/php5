@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="">
+    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="update met admin/user role">
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/laratrust.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/config/laratrust_seeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2020_10_26_102724_laratrust_setup_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/laravel/database/seeds/LaratrustSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/opmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/opmaak.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app1.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/user/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +179,8 @@
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/laravel/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/laravel/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/laravel/vendor/kkszymanowski/traitor" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hUiztMkHm6TrskqYVyVtDK4Y7A" />
@@ -217,7 +236,7 @@
       <workItem from="1601899885667" duration="4459000" />
       <workItem from="1601904407800" duration="9968000" />
       <workItem from="1603548023298" duration="13428000" />
-      <workItem from="1603703445693" duration="2497000" />
+      <workItem from="1603703445693" duration="16714000" />
     </task>
     <task id="LOCAL-00001" summary="instal laravel">
       <created>1600072427061</created>
@@ -289,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603562443946</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="begin met admin/user role">
+      <created>1603707580027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603707580027</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +345,8 @@
     <MESSAGE value="update css" />
     <MESSAGE value="update css(footer) en begin met zoekbalk" />
     <MESSAGE value="zoekbalk update" />
-    <option name="LAST_COMMIT_MESSAGE" value="zoekbalk update" />
+    <MESSAGE value="begin met admin/user role" />
+    <MESSAGE value="update met admin/user role" />
+    <option name="LAST_COMMIT_MESSAGE" value="update met admin/user role" />
   </component>
 </project>

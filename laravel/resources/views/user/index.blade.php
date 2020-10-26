@@ -15,6 +15,27 @@
                         @endif
 
                         {{ __('You are logged in as an user!') }}
+
+                            <div class="row col-12 ">
+                                <p>Je gegevens:</p>
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>Gebruikdersnaam</th>
+                                        <th>studenten/docentnummer</th>
+                                        <th>emailadres</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ Auth::user()->name }}</td>
+                                            <td>{{ Auth::user()->schoolnummer }}</td>
+                                            <td>{{ Auth::user()->email }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
                     </div>
                 </div>
             </div>

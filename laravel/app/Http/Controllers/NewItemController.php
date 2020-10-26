@@ -73,7 +73,7 @@ class NewItemController extends Controller
 
     public function search(){
         $search_text = $_GET['query'];
-        $newsItems = NewsItem::where('title','LIKE','%'.$search_text.'%')->get();
+        $newsItems = NewsItem::where('title','LIKE','%'.$search_text.'%')->orWhere('description','LIKE','%'.$search_text.'%')->get();
 
         return view('news-items.search', compact('newsItems'));
 

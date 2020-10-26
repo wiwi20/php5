@@ -3,7 +3,10 @@
 @section('content')
     <div class="container">
         <header class="headerclass">
+            <h1 class="float-left">Nieuwsberichten</h1>
+            @if(Auth::user())
             <a class="nav-link float-right" href="{{route('news.create')}}">maak een nieuwsbericht</a>
+            @endif
         </header>
 
         @if($message = Session::get('success'))

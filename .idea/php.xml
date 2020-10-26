@@ -112,6 +112,9 @@
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/laravel/vendor/santigarcor/laratrust" />
+      <path value="$PROJECT_DIR$/laravel/vendor/kkszymanowski/traitor" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
