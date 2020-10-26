@@ -19,6 +19,8 @@ Route::get('/news/create', 'NewItemController@create')->name('news.create');
 Route::post('/news/store',  'NewItemController@store')->name('news.store');
 Route::get('/news/{id}', 'NewItemController@show')->name('news.show');
 Route::get('/search', 'NewItemController@search')->name('news.search');
+Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/user', 'UserController@index')->name('user');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
