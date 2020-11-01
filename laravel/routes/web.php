@@ -20,8 +20,10 @@ Route::post('/news/store',  'NewItemController@store')->name('news.store');
 Route::get('/news/{id}', 'NewItemController@show')->name('news.show');
 Route::get('/search', 'NewItemController@search')->name('news.search');
 Route::get('/admin', 'AdminController@index')->name('admin');
+Route::delete('/admin/delete/{id}', 'AdminController@destroy')->name('admin.destroy');
 Route::get('/user', 'UserController@index')->name('user');
-
+Route::post('admin/changeStatus/{id}', 'AdminController@changeStatus')->name('admin.changeStatus');
+Route::get('/category/{id}','NewItemController@filter')->name('filter');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 

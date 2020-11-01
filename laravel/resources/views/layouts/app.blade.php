@@ -31,10 +31,10 @@
                                                 <div class = "input-group">
                                                     <input type = "text" class = "form-control" name = "query"
                                                            placeholder = "zoek"> <span class = "input-group-btn">
-                                                    <button type = "submit" class = "btn btn-default">
+                                                        <button type = "submit" class = "btn btn-default">
                                                         Search
-                                                    </button>
-                                                </span>
+                                                        </button>
+                                                    </span>
                                                 </div>
                                             </form>
                                         </div>

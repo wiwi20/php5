@@ -28,3 +28,15 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.status {
+    visibility: hidden;
+}
+.categories a{
+    color: black;
+    padding: 10px;
+}
+.categories-index{
+    border: 1px solid #d8dde2;
+    margin-right: 10px;
+    margin-left: 10px;
+}

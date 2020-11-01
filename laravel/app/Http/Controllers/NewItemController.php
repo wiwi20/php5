@@ -16,7 +16,8 @@ class NewItemController extends Controller
      */
     Public function index(){
         $newsItems = NewsItem::orderBy('created_at', 'desc')->get();
-        return view('news-items.index', compact('newsItems'));
+        $categories = Category::all();
+        return view('news-items.index', compact('newsItems','categories'));
     }
     /**
      * Display a listing of the resourse
@@ -29,6 +30,7 @@ class NewItemController extends Controller
         $categories = Category::all();
         return view('news-items.create', compact('categories'));
     }
+
     /**
      * store a newly created resource in starage
      *
@@ -42,6 +44,7 @@ class NewItemController extends Controller
             'description' => 'required',
             'image' =>'required',
             'category' =>'exists:categories,id',
+            'status' =>'required',
         ]);
 
         $newsItem = new NewsItem();
@@ -49,6 +52,7 @@ class NewItemController extends Controller
         $newsItem->description = $request->get('description');
         $newsItem->category_id = $request->get('category');
         $newsItem->image = $request->get('image');
+        $newsItem->status = $request->get('status');
 
         $newsItem->save();
         return redirect('news')->with('succes', 'bericht is opgeslagen');
@@ -70,12 +74,16 @@ class NewItemController extends Controller
         return view('news-items.show', compact('newsItem'));
     }
 
-
     public function search(){
         $search_text = $_GET['query'];
         $newsItems = NewsItem::where('title','LIKE','%'.$search_text.'%')->orWhere('description','LIKE','%'.$search_text.'%')->get();
 
         return view('news-items.search', compact('newsItems'));
+    }
 
+    public function filter($id){
+        $category_item = NewsItem::where('category_id', $id)->get();
+        $id_= $id;
+        return view('news-items.category', compact('category_item', 'id_' ));
     }
 }

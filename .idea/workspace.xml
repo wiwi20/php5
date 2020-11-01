@@ -1,34 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="update met admin/user role">
-      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/config/laratrust.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/config/laratrust_seeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/database/migrations/2020_10_26_102724_laratrust_setup_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/laravel/database/seeds/LaratrustSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/NewsItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2020_09_28_102152_create_news_items_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/migrations/2020_09_28_102152_create_news_items_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/opmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/opmaak.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/layouts/app2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/layouts/app2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/laravel/resources/views/news-items" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
@@ -236,7 +224,14 @@
       <workItem from="1601899885667" duration="4459000" />
       <workItem from="1601904407800" duration="9968000" />
       <workItem from="1603548023298" duration="13428000" />
-      <workItem from="1603703445693" duration="16714000" />
+      <workItem from="1603703445693" duration="17423000" />
+      <workItem from="1603794562299" duration="1402000" />
+      <workItem from="1603801074204" duration="594000" />
+      <workItem from="1603877111920" duration="82000" />
+      <workItem from="1603886103162" duration="1123000" />
+      <workItem from="1604141381758" duration="8692000" />
+      <workItem from="1604151607205" duration="29716000" />
+      <workItem from="1604228407590" duration="7573000" />
     </task>
     <task id="LOCAL-00001" summary="instal laravel">
       <created>1600072427061</created>
@@ -315,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603707580027</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update met admin/user role">
+      <created>1603730294892</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603730294892</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
