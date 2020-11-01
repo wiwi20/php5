@@ -30,6 +30,7 @@
 }
 .status {
     visibility: hidden;
+    margin: -20px;
 }
 .categories a{
     color: black;

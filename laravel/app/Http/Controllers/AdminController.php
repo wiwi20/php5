@@ -33,10 +33,10 @@ class AdminController extends Controller
         $newsItems->status=!$newsItems->status;
 
         if($newsItems->save()){
-            return redirect('/admin')->with('success', 'nieuwsbericht is veranderd');
+            return redirect('/admin')->with('success', 'status is veranderd');
         }
         else{
-            return redirect('/admin')->with('error', 'nieuwsbericht is niet veranderd');
+            return redirect('/admin')->with('error', 'status is niet veranderd');
         }
     }
 }

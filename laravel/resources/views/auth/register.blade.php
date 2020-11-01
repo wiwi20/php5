@@ -75,6 +75,19 @@
                             </div>
                         </div>
 
+                        <div class="form-group row status">
+                            <label for="validatie" class="col-md-4 col-form-label text-md-right">{{ __('validatie') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="validatie" type="text" class="form-control @error('validatie') is-invalid @enderror" name="validatie" value="1" required autocomplete="validatie" autofocus>
+                                @error('validatie')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">

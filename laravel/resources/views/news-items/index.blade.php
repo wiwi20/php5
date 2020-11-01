@@ -4,7 +4,7 @@
     <div class="container">
         <header class="headerclass">
             <h1 class="float-left">Nieuwsberichten</h1>
-            @if(Auth::user())
+            @if(Auth::user() && (Auth::user()->validatie > 5 ))
             <a class="nav-link float-right" href="{{route('news.create')}}">maak een nieuwsbericht</a>
             @endif
         </header>

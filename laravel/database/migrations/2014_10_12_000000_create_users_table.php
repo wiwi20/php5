@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('schoolnummer');
             $table->string('password');
             $table->string('email')->unique();
+            $table->string('validatie');
             $table->rememberToken();
             $table->timestamps();
         });

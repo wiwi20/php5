@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\NewsItem;
+use App\models\User;
 use Illuminate\Http\Request;
+use Auth;
 
 class NewItemController extends Controller
 {
@@ -67,6 +69,14 @@ class NewItemController extends Controller
     public function show($id){
 
         $newsItem = NewsItem::find($id);
+
+        if (Auth::check()){
+            $user = Auth::user();
+            $user->validatie++;
+            $user->save();
+            return view('news-items.show', compact('newsItem', 'user'));
+        }
+
         if($newsItem === null){
             abort(404, "Dit niewsitem is helaas niet gevonden");
         }
