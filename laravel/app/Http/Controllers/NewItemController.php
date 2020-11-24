@@ -94,6 +94,7 @@ class NewItemController extends Controller
     public function filter($id){
         $category_item = NewsItem::where('category_id', $id)->get();
         $id_= $id;
+
         return view('news-items.category', compact('category_item', 'id_' ));
     }
 }

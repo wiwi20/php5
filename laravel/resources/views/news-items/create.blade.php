@@ -51,6 +51,9 @@
                 <div class="form-group">
                     <label for="image">Afbeelding URL</label>
                     <input type="text" class="form-control" id="image" name="image">
+                    @if ($errors->has('image'))
+                        <span class="alert-danger form-check-inline">{{$errors->first('image')}}</span>
+                    @endif
                 </div>
                 <div class="form-group status">
                     <label for="status">status:</label>

@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="911012bb-7d7e-41d1-a65b-f76a9e98a82c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/NewItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/NewsItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/NewsItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/public/css/opmaak.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/opmaak.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/admin/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/news-items/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +220,18 @@
       <workItem from="1604141381758" duration="8692000" />
       <workItem from="1604151607205" duration="29716000" />
       <workItem from="1604228407590" duration="10535000" />
-      <workItem from="1604241974908" duration="23298000" />
+      <workItem from="1604241974908" duration="23822000" />
+      <workItem from="1604300451655" duration="4877000" />
+      <workItem from="1604345020571" duration="3000" />
+      <workItem from="1604693028583" duration="14000" />
+      <workItem from="1605003270374" duration="13000" />
+      <workItem from="1605007630793" duration="3528000" />
+      <workItem from="1605011255381" duration="323000" />
+      <workItem from="1605012420416" duration="393000" />
+      <workItem from="1605083631256" duration="7027000" />
+      <workItem from="1605179615154" duration="191000" />
+      <workItem from="1606213960298" duration="5150000" />
+      <workItem from="1606221909053" duration="670000" />
     </task>
     <task id="LOCAL-00001" summary="instal laravel">
       <created>1600072427061</created>
@@ -321,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604238001489</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update validatie">
+      <created>1604267197337</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604267197337</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +364,7 @@
     <MESSAGE value="begin met admin/user role" />
     <MESSAGE value="update met admin/user role" />
     <MESSAGE value="status button en filter categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="status button en filter categories" />
+    <MESSAGE value="update validatie" />
+    <option name="LAST_COMMIT_MESSAGE" value="update validatie" />
   </component>
 </project>
